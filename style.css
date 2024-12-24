@@ -1,0 +1,145 @@
+/*CSS */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #fff;
+}
+.navbar {
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    font-weight: 600;
+}
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+    lazy-load: true;
+        
+}
+.product-card img {
+    max-height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.product-card:hover img {
+    transform: scale(1.1);
+}
+.card-body {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+    background: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.btn-primary:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+.testimonial {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.faq-item {
+    margin-bottom: 15px;
+}
+.accordion-button {
+    font-weight: 600;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.back-to-top:hover {
+    transform: scale(1.1);
+}
+.footer {
+    background: #343a40;
+    color: #fff;
+    padding: 30px 0;
+}
+.contact-form input, .contact-form textarea {
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Additional Styling for Responsive Design */
+@media (max-width: 992px) {
+    .carousel-inner img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+    .navbar-nav {
+        margin-top: 10px;
+    }
+    .product-card img {
+        max-height: 200px;
+    }
+    .testimonial {
+        padding: 20px;
+    }
+    .footer {
+        padding: 20px 0;
+    }
+}
+
+/* Mobile and tablet responsive fixes */
+@media (max-width: 576px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .product-card img {
+        max-height: 180px;
+    }
+    .carousel-inner img {
+        height: 250px;
+    }
+    .testimonial {
+        padding: 15px;
+    }
+    .card-body {
+        padding: 15px;
+    }
+    .contact-form input, .contact-form textarea {
+        padding: 10px;
+    }
+}
+
+/* Back to top button on smaller screens */
+@media (max-width: 576px) {
+    .back-to-top {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px;
+    }
+}
