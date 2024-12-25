@@ -18,12 +18,14 @@ header {
 .navbar-brand {
     font-weight: 600;
 }
+
 .carousel-inner img {
-    height: 400px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image fills its container */
     lazy-load: true;
-        
 }
+
 .product-card img {
     max-height: 250px;
     object-fit: cover;
